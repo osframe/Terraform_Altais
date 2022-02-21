@@ -17,3 +17,8 @@ output "default_route_table_id" {
   value = aws_vpc.terra-vpc.main_route_table_id
   sensitive = false
 }
+
+output "aws_s3_bucket" {
+  value = aws_s3_bucket.osframe-terra-bucket.id
+  sensitive = false
+}
